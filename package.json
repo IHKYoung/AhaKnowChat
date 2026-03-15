@@ -1,0 +1,49 @@
+{
+  "name": "ahaknow-chat",
+  "version": "1.0.0",
+  "description": "AhaKnow Chat is a local-first AI chat workspace for prompt testing, multi-role conversations, and topic-organized threads.",
+  "author": "Clarke Young",
+  "scripts": {
+    "dev": "npm run dev:web",
+    "dev:web": "node scripts/kill-port.js && vite --mode development",
+    "type-check": "tsc --noEmit",
+    "build": "npm run build:web",
+    "build:web": "tsc && vite build --mode production",
+    "build:vercel": "npm run build:web",
+    "preview": "vite preview",
+    "start": "vite preview"
+  },
+  "homepage": "./",
+  "dependencies": {
+    "@radix-ui/react-dialog": "^1.1.15",
+    "@radix-ui/react-dropdown-menu": "^2.1.16",
+    "@radix-ui/react-icons": "^1.3.2",
+    "@radix-ui/react-slot": "^1.2.3",
+    "@types/node": "^22.9.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "dotenv": "^17.2.3",
+    "i18next": "^25.6.0",
+    "i18next-browser-languagedetector": "^8.2.0",
+    "lucide-react": "^0.545.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-i18next": "^16.0.1",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss-animate": "^1.0.7",
+    "zustand": "^5.0.8"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^5.0.4",
+    "autoprefixer": "^10.4.20",
+    "baseline-browser-mapping": "^2.9.11",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.18",
+    "typescript": "^5.6.3",
+    "vite": "^7.1.10"
+  }
+}

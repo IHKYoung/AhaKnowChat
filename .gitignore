@@ -1,0 +1,25 @@
+# Node.js
+node_modules/
+dist/
+dist-electron/
+release/
+
+# Env files
+.env
+.env.production
+.env.local
+.env.*.local
+!.env.example
+!.env.production.example
+
+# Logs and reports
+*.log
+coverage/
+docs/
+X.md
+PR.md
+src
+electron
+
+# OS
+.DS_Store
